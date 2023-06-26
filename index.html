@@ -259,6 +259,17 @@
           
           
           <li>
+            <a href="/tags/">
+              
+              标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
             <a href="/archive/">
               
               归档
@@ -273,17 +284,6 @@
             <a href="/categories/">
               
               分类
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/tags/">
-              
-              标签
               
               
             </a>
@@ -738,11 +738,11 @@ Gitee 仓库地址：ht......
   <div class="tags">
     
     
-    <a href="/tags/#Life documentary" title="Life documentary" rel="1">Life documentary</a>
-    
-    
-    
     <a href="/tags/#生活随记" title="生活随记" rel="1">生活随记</a>
+    
+    
+    
+    <a href="/tags/#Life documentary" title="Life documentary" rel="1">Life documentary</a>
     
     
   </div>
@@ -812,8 +812,8 @@ Gitee 仓库地址：ht......
       <li>大学四年 最大的收获应该是——孤独</li>
     </a>
     
-    <a href="en/Hexo-Theme-LiveMyLife/">
-      <li>Love to type code</li>
+    <a href="cn/Hexo-Theme-LiveMyLife/">
+      <li>最爱敲代码</li>
     </a>
     
   </ul>
@@ -856,12 +856,12 @@ Gitee 仓库地址：ht......
 <div class="widget">
   <ul>
     
-    <a href="/categories/#I love design">
-      <li>I love design</li>
-    </a>
-    
     <a href="/categories/#随记">
       <li>随记</li>
+    </a>
+    
+    <a href="/categories/#I love design">
+      <li>I love design</li>
     </a>
     
   </ul>
@@ -1378,5 +1378,20 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	</body>
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
 </html>
