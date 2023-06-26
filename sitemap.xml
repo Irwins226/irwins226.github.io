@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://irwin-uc.github.io/cn/%E4%B8%8A%E5%96%84%E8%8B%A5%E6%B0%B4/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/cn/%E4%B8%8A%E5%96%84%E8%8B%A5%E6%B0%B4/</loc>
     
     <lastmod>2023-06-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/cn/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%BC%9A%E5%A5%BD%E5%90%97/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/cn/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%BC%9A%E5%A5%BD%E5%90%97/</loc>
     
     <lastmod>2023-06-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/cn/index/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/cn/%E5%A4%A7%E5%AD%A6%E5%9B%9B%E5%B9%B4%20%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7%E5%BA%94%E8%AF%A5%E6%98%AF%E2%80%94%E2%80%94%E5%AD%A4%E7%8B%AC/</loc>
     
     <lastmod>2023-06-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/cn/%E5%A4%A7%E5%AD%A6%E5%9B%9B%E5%B9%B4%20%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E8%8E%B7%E5%BA%94%E8%AF%A5%E6%98%AF%E2%80%94%E2%80%94%E5%AD%A4%E7%8B%AC/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/cn/index/</loc>
     
     <lastmod>2023-06-26</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/cn/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/cn/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2023-06-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/en/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2023-06-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/about/index.html</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/about/index.html</loc>
     
     <lastmod>2023-06-21</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/archive/index.html</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/404.html</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/404.html</loc>
     
     <lastmod>2009-04-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/categories/index.html</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/categories/index.html</loc>
     
     <lastmod>2009-04-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/tags/index.html</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/tags/index.html</loc>
     
     <lastmod>2009-04-22</lastmod>
     
@@ -80,7 +80,7 @@
   
 
   <url>
-    <loc>https://irwin-uc.github.io/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog</loc>
     <lastmod>2023-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -88,14 +88,14 @@
 
   
   <url>
-    <loc>https://irwin-uc.github.io/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2023-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/tags/Life-documentary/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/tags/Life-documentary/</loc>
     <lastmod>2023-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -104,14 +104,14 @@
 
   
   <url>
-    <loc>https://irwin-uc.github.io/categories/%E9%9A%8F%E8%AE%B0/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/categories/%E9%9A%8F%E8%AE%B0/</loc>
     <lastmod>2023-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://irwin-uc.github.io/categories/I-love-design/</loc>
+    <loc>https://irwin-uc.github.io/lifeblog/categories/I-love-design/</loc>
     <lastmod>2023-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
