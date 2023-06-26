@@ -270,9 +270,9 @@
           
           
           <li>
-            <a href="/lifeblog/categories/">
+            <a href="/lifeblog/tags/">
               
-              分类
+              标签
               
               
             </a>
@@ -281,9 +281,9 @@
           
           
           <li>
-            <a href="/lifeblog/tags/">
+            <a href="/lifeblog/categories/">
               
-              标签
+              分类
               
               
             </a>
@@ -465,13 +465,40 @@
       <!-- 标签云 -->
       <div id='tag_cloud' class="tags">
         
-        <a href="#随记" title="随记" rel="1">随记</a>
-        
         <a href="#I love design" title="I love design" rel="1">I love design</a>
+        
+        <a href="#随记" title="随记" rel="1">随记</a>
         
       </div>
 
       <!-- 标签列表 -->
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="I love design">
+          <span class="tag-text">I love design</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/lifeblog/en/Hexo-Theme-LiveMyLife/">
+            <h2 class="post-title">
+              Love to type code
+              
+            </h2>
+            
+            <h3 class="post-subtitle">
+              A succinct hexo theme...
+            </h3>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
       
       <div class="one-tag-list">
         <span class="fa fa-tag listing-seperator" id="随记">
@@ -493,33 +520,6 @@
             
             <h3 class="post-subtitle">
               如何定义自己的博客并制作符合自己心意的主题
-            </h3>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="I love design">
-          <span class="tag-text">I love design</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/lifeblog/en/Hexo-Theme-LiveMyLife/">
-            <h2 class="post-title">
-              Love to type code
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              A succinct hexo theme...
             </h3>
             
           </a>
