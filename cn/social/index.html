@@ -248,9 +248,9 @@
           
           
           <li>
-            <a href="/categories/">
+            <a href="/archive/">
               
-              分类
+              归档
               
               
             </a>
@@ -270,9 +270,9 @@
           
           
           <li>
-            <a href="/archive/">
+            <a href="/categories/">
               
-              归档
+              分类
               
               
             </a>
@@ -474,29 +474,29 @@
 
         <hr>
 <p>​          前段时间有两个项目，领导需要很直观的进行数据展示和各种花式图表统计，由于时间紧迫，需要在大概一小时之内弄出来，实在无力，就问了一下GPT，这小东西告诉我有几个工具可以做到，当时它告诉我Metabase很合适，开源的部分能够满足我的需求了，但现在项目完成了，再次问它，它却死活不肯告诉我，如下：</p>
-<p><img src="image-20230711102628954.png" alt="image-20230711102628954"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711102628954.png?raw=true" alt="image-20230711102628954"></p>
 <p>​        没事，还好我已经知道了！为什么选择Metabase呢？ 可能本人是Java出身，刚好Metabase就是用Java写的，加上喜欢清爽简洁的操作界面吧！而且做好的图表可以作为一个链接分享出去，网络互通就可以看，多方便的；给大家放个图：</p>
-<p><img src="image-20230711103014043.png" alt="image-20230711103014043"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711103014043.png?raw=true" alt="image-20230711103014043"></p>
 <p><strong>下面开始咱们今天的正题，如何使用Metabase做数据分析和图表统计</strong></p>
 <p>​          我们在做开发时一般都是先搞环境，对，giao起来，我用的docker-compose进行编排的，由于本人的是生产环境，各种配置，编排文件不方便晒出来，关于这方面的环境搭建，大家可自行Google或百度！根据自己需要，将你需要统计的数据库编排进去，比如我的是postgres和MySQL，那就两个都编排到docker-compose.yml当中，Metabase如下就可以直接使用，对应挂载的目录需要提前建好哦！</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">metabase:</span><br><span class="line">    image: metabase/metabase</span><br><span class="line">    ports:</span><br><span class="line">      - <span class="number">3000</span>:<span class="number">3000</span></span><br><span class="line">    volumes:</span><br><span class="line">      - .<span class="regexp">/data/</span>db:<span class="regexp">/metabase-data/</span>db</span><br><span class="line">      - .<span class="regexp">/config:/m</span>etabase-data/config</span><br><span class="line">      - .<span class="regexp">/logs:/m</span>etabase-data/logs</span><br><span class="line">      - .<span class="regexp">/ssl:/m</span>etabase-data/ssl</span><br></pre></td></tr></table></figure>
 <p>1、编排好后docker-compose up -d ,再访问ip:3000，Metabase的界面就出来了</p>
-<p><img src="image-20230711105110249.png" alt="image-20230711105110249"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711105110249.png?raw=true" alt="image-20230711105110249"></p>
 <p>2、点击Let’t get started,创建一个初始化的admin账户</p>
-<p><img src="image-20230711105213442.png" alt="image-20230711105213442"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711105213442.png?raw=true" alt="image-20230711105213442"></p>
 <p>3、配置邮箱，可以通过邮箱给用户发送通知，邀请新用户，重置密码等</p>
-<p><img src="image-20230711105247147.png" alt="image-20230711105247147"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711105247147.png?raw=true" alt="image-20230711105247147"></p>
 <p>4、配置完成，会让你初始化连接一个数据库：</p>
-<p><img src="image-20230711105638836.png" alt="image-20230711105638836"></p>
-<p>5、然后在首页会让你选择数据库进行数据浏览，我这里用SAMPLEDATABASE进行说明<img src="image-20230711105810347.png" alt="image-20230711105810347"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711105638836.png?raw=true" alt="image-20230711105638836"></p>
+<p>5、然后在首页会让你选择数据库进行数据浏览，我这里用SAMPLEDATABASE进行说明<img src="https://github.com/irwins226/blog-images/blob/main/image-20230711105810347.png?raw=true" alt="image-20230711105810347">)</p>
 <p>6、点击创建问题，然后如下：</p>
-<p><img src="image-20230711110148813.png" alt="image-20230711110148813"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711110148813.png?raw=true" alt="image-20230711110148813"></p>
 <p>具体有哪些可供使用的东西，可以自己去摸索，这里就简单过了，效果图像下面这样：</p>
-<p><img src="image-20230711110600113.png" alt="image-20230711110600113"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711110600113.png?raw=true" alt="image-20230711110600113"></p>
 <p>7、点击保存会询问你是否保存到仪表盘，不保存就统一编辑好问题，最后再添加仪表盘挨个将问题添加到仪表盘，这里说一下，很多人可能不太清除问题和仪表盘，添加问题（question）就是你要做的统计或者数据分析工作编辑好各种比如日期筛选，数量统计等，仪表盘呢就是提供给客户或者领导看的最终的页面，可以理解为平时我们前端开发web界面通常都会有一个首页统计，各种折线图，条状图等等，保存仪表盘之后会有个分享按钮如图：</p>
-<p><img src="image-20230711111200187.png" alt="image-20230711111200187"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711111200187.png?raw=true" alt="image-20230711111200187"></p>
 <p>8、点击分享，先启用共享，然后赋值链接，也可以嵌入你的前端，然后发给领导或客户，就算大功告成了！如下：</p>
-<p><img src="image-20230711111251049.png" alt="image-20230711111251049"></p>
+<p><img src="https://github.com/irwins226/blog-images/blob/main/image-20230711111251049.png?raw=true" alt="image-20230711111251049"></p>
 <p>由于数据量大，需要部署多台服务器完成多种多个数据库的分析和统计，我这里需要做个一键部署和使用，所以我才选择docker的方式，可直接将其移植到其他服务器，可以在短时间内快速移植并完成数据的统计分析</p>
 <hr>
 <p><strong>==以下是当时做的移植操作：==</strong></p>
