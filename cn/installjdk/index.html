@@ -140,10 +140,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://irwins226.github.io/tags/Life-documentary/">
+  <link rel="canonical" href="https://irwins226.github.io/cn/installjdk/">
   <title>
     
-      IT|一入编程深似海
+      Centos安装JDK的几种方式 - IT|一入编程深似海
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -301,29 +301,7 @@
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      简体中文
-    </span>
-    <select id="lang-select" data-canonical="tags/Life-documentary/index.html">
-      
-      
-      <option value="cn"  selected >
-        简体中文
-      </option>
-      
-      <option value="en" >
-        English
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -376,18 +354,18 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io');
-      --intro-header-background-image-url-page: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-page: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io//img/header_img/tag_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/tag_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io//img/header_img/tag_bg.jpg');
     }
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/img/header_img/tag_bg.jpg'); */
       
     }
 
@@ -410,10 +388,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>最爱敲代码</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">Experience is the name everyone gives to their mistakes</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#我爱学习" title="我爱学习">我爱学习</a>
+              
+            </div>
+            <h1>Centos安装JDK的几种方式</h1>
+            <h2 class="subheading">如何在Centos操作系统中安装和配置原生JDK和OpenJDK</h2>
+            <span class="meta">
+              Posted by Sebastian Irwin on
+              2023-07-11
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">4</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.1k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -454,327 +464,368 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+        <h2 id="在Centos操作系统中安装和配置jdk">在Centos操作系统中安装和配置jdk</h2>
+<p>Cenos 操作系统安装jdk1.8</p>
+<h2 id="1-检查并卸载-OpenJDK">1 检查并卸载 OpenJDK</h2>
+<p>查看 Java 相关信息，检查系统是否自带了 OpenJDK 以及相关安装包，如果有的话则应先将其卸载</p>
+<p>java -version</p>
+<p>rpm -qa | grep java</p>
+<p>// rpm（RedHat Package Manger）：RedHat软件管理工具，是一种用于打包及安装的工具<br>
+// -qa（query，all）<br>
+// grep（global search rgular expression(RE) and print out the line）：是一种强大的文本搜索工具</p>
+<p>由于本人的服务器操作系统并没有安装Java环境，我都是直接使用docker进行管理的，所以执行如下</p>
+<blockquote>
+<p>[root@VM-0-13-centos jar]# java -version</p>
+<p>-bash: java: command not found</p>
+<p>[root@VM-0-13-centos jar]# rpm -qa | grep java</p>
+</blockquote>
+<p>执行【rpm -qa | grep java】如果执行为空白，说明本地并没有安装Java相关</p>
+<p>如果已经安装了想卸载重装可以使用命令 rpm -e --nodeps ，如：</p>
+<blockquote>
+<p>rpm -e --nodeps tzdata-java-2012c-1.el6.noarch</p>
+<p>rpm -e --nodeps java-1.6.0-openjdk-1.6.0.0-1.45.1.11.1.el6.x86_64</p>
+</blockquote>
+<p>// -e：删除指定的套件<br>
+// --nodeps：不验证套件档的相互关联性</p>
+<h2 id="2-使用下载好的压缩包方式安装-JDK">2 使用下载好的压缩包方式安装 JDK</h2>
+<p>在 Oracle 官网下载相应的 JDK 版本压缩包到本地<br>
+<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/">Oracle - Java Downloads</a></p>
+<h2 id="Oracle-JDK-8安装方式">Oracle JDK 8安装方式</h2>
+<h3 id="1-RPM包安装方式">1. RPM包安装方式</h3>
+<p>通过Oracle官方网站下载适用于CentOS的JDK 8的RPM包。您可以访问以下链接：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">Oracle JDK 8下载页面</a></li>
+</ul>
+<p>打开终端，使用以下命令切换到具有管理员权限的用户：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span> -</span><br></pre></td></tr></table></figure>
+<p>在切换到管理员权限后，使用CD命令进入RPM包所在目录。将<code>cd /usr/java</code>替换为你RPM包的目录路径：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/usr/</span>java</span><br></pre></td></tr></table></figure>
+<p>使用以下命令安装RPM包。记得替换为RPM包的名称，我这里是<code>jdk-8u371-linux-x64.rpm</code>：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum</span> localinstall jdk-<span class="number">8</span>u<span class="number">371</span>-linux-x<span class="number">64</span>.rpm</span><br></pre></td></tr></table></figure>
+<p>安装过程中，您可能会收到许可协议的提示。输入 y 回车,执行如下：</p>
+<blockquote>
+<p><img src="C:%5CUsers%5CIrwin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230703105932414.png" alt=""></p>
+</blockquote>
+<p>安装完成后，您可以使用以下命令验证JDK的安装：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure>
+<p>打印如下，安装成功</p>
+<blockquote>
+<p><img src="C:%5CUsers%5CIrwin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230703110028977.png" alt="image-20230703110028977"></p>
+</blockquote>
+<h3 id="2-自定义安装方式-使用压缩包">2. 自定义安装方式(使用压缩包)</h3>
+<p>从Oracle官方网站下载适用于Linux的JDK 8压缩包。您可以访问以下链接：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">Oracle JDK 8下载页面</a></li>
+</ul>
+<p>打开终端，使用以下命令切换到具有管理员权限的用户：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span> -</span><br></pre></td></tr></table></figure>
+<p>在切换到管理员权限后，使用以下命令创建一个目标目录。我的是<code>/usr/java</code>替换为希望安装JDK的目标目录：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="regexp">/usr/</span>java</span><br></pre></td></tr></table></figure>
+<p>将下载的JDK 8压缩包复制到目标目录。</p>
+<p>使用以下命令解压缩压缩包。我的压缩包名为：<code>jdk-8u371-linux-x64.tar.gz</code>，记得替换JDK压缩包的文件名：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> zxvf jdk-<span class="number">8</span>u<span class="number">371</span>-linux-x<span class="number">64</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<p>配置环境变量。打开<code>~/.bashrc</code>文件，并添加以下行，将<code>/usr/java/jdk1.8.0-x64/bin</code>替换为实际的JDK安装路径：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">JAVA_HOME</span>=/usr/java/jdk1.8.0-x64/bin</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$JAVA_HOME/bin</span><br></pre></td></tr></table></figure>
+<p>使用以下命令使环境变量生效：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>安装完成后，您可以使用以下命令验证JDK的安装：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure>
+<h2 id="OpenJDK8安装方式">OpenJDK8安装方式</h2>
+<h3 id="1-YUM包管理器安装方式">1. YUM包管理器安装方式</h3>
+<p>打开终端，使用以下命令切换到具有管理员权限的用户：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span> -</span><br></pre></td></tr></table></figure>
+<p>使用以下命令更新系统的YUM包管理器：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum update</span></span><br></pre></td></tr></table></figure>
+<p>使用以下命令安装OpenJDK 8开发包：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum</span> install java-<span class="number">1</span>.<span class="number">8</span>.<span class="number">0</span>-openjdk-devel</span><br></pre></td></tr></table></figure>
+<p>安装过程中，您可能会收到确认提示。输入<code>y</code>继续安装。</p>
+<p>安装完成后，您可以使用以下命令验证OpenJDK的安装：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-源代码编译安装方式">2. 源代码编译安装方式</h3>
+<p>下载OpenJDK 8源代码包。您可以访问以下链接：</p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://jdk.java.net/archive/">OpenJDK 8源代码下载页面</a> 后来应该Oracle官网更新太快，8已经在这个页面找不到了，我是在这儿找到的</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://hg.openjdk.org/jdk8/jdk8/jdk/">OpenJDK 8源代码</a></p>
+</li>
+<li>
+<p>linux 系统选择<code>gz </code></p>
+<blockquote>
+<p><img src="C:%5CUsers%5CIrwin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230703113341134.png" alt="image-20230703113341134"></p>
+</blockquote>
+</li>
+</ul>
+<p>打开终端，使用以下命令切换到具有管理员权限的用户：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span> -</span><br></pre></td></tr></table></figure>
+<p>使用以下命令解压源代码包。我下载后的源码包<code>jdk-687fd7c7986d.tar.gz</code></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> zxvf jdk-<span class="number">687</span>fd<span class="number">7</span>c<span class="number">7986</span>d.tar.gz</span><br></pre></td></tr></table></figure>
+<p>进入解压后的源代码目录：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cd</span> jdk-<span class="number">687</span>fd<span class="number">7</span>c<span class="number">7986</span>d</span><br></pre></td></tr></table></figure>
+<p>配置编译选项。使用以下命令配置编译选项：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./configure</span></span><br></pre></td></tr></table></figure>
+<p>使用以下命令开始编译和安装OpenJDK 8：</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">make</span> &amp;&amp; <span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+<p>安装完成后，您可以使用以下命令验证OpenJDK的安装：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure>
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2023">
-          <span class="tag-text">2023</span>
-        </span>
-        <ul>
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
           
-          <li>
-            07-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/installjdk/" style="color: #0085a1">
-              <span>
-                Centos安装JDK的几种方式
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
           
-          <li>
-            06-30
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/HandSome/" style="color: #0085a1">
-              <span>
-                Irwin Is So HandSome
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-26
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/这个世界会好吗/" style="color: #0085a1">
-              <span>
-                这个世界还会好吗
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-26
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/上善若水/" style="color: #0085a1">
-              <span>
-                最高德行——上善若水
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-26
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/大学四年 最大的收获应该是——孤独/" style="color: #0085a1">
-              <span>
-                大学四年 最大的收获应该是——孤独
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-26
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/index/" style="color: #0085a1">
-              <span>
-                祝小曾生日快乐
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-25
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Love to type code
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            06-25
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                最爱敲代码
-                
-                -- cn
-                
-              </span>
-            </a>
+          <li class="next">
+            <a href="/en/HandSome/" data-toggle="tooltip" data-placement="top" title="Irwin Is So HandSome">Next Post &rarr;</a>
           </li>
           
         </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=Centos安装JDK的几种方式&body=Hi,I found this website and thought you might like it https://irwins226.github.io/cn/installjdk/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/irwins226/irwins226.github.io/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'adf99e67986804622684',
+      clientSecret: 'ee0cbe7af0d70be10c0c70fdff0fa5d25d8633ee',
+      repo: 'blog-comment',
+      owner: 'irwins226',
+      admin: 'irwins226',
+      id: 'Tue Jul 11 2023 09:34:17 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'zh-CN',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
       </div>
-      
-    </div>
-  </div>
-</div>
 
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
 
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
     
-        <!-- Visitors -->
-<h5><a href="/">来访者</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%9C%A8Centos%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEjdk"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">在Centos操作系统中安装和配置jdk</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1-%E6%A3%80%E6%9F%A5%E5%B9%B6%E5%8D%B8%E8%BD%BD-OpenJDK"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">1 检查并卸载 OpenJDK</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2-%E4%BD%BF%E7%94%A8%E4%B8%8B%E8%BD%BD%E5%A5%BD%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85-JDK"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">2 使用下载好的压缩包方式安装 JDK</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Oracle-JDK-8%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">Oracle JDK 8安装方式</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-RPM%E5%8C%85%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">1. RPM包安装方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F-%E4%BD%BF%E7%94%A8%E5%8E%8B%E7%BC%A9%E5%8C%85"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">2. 自定义安装方式(使用压缩包)</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#OpenJDK8%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">OpenJDK8安装方式</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-YUM%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">1. YUM包管理器安装方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-%E6%BA%90%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">2. 源代码编译安装方式</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
     
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#我爱学习" title="我爱学习">我爱学习</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#生活随记" title="生活随记" rel="1">生活随记</a>
-    
-    
-    
-    <a href="/tags/#我爱学习" title="我爱学习" rel="1">我爱学习</a>
-    
-    
-    
-    <a href="/tags/#Life documentary" title="Life documentary" rel="2">Life documentary</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">关于自己</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/avatar.png" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Experience is the name everyone gives to their mistakes...</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">最近博文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../cn/installjdk/">
-      <li>Centos安装JDK的几种方式</li>
-    </a>
-    
-    <a href="../../en/HandSome/">
-      <li>Irwin Is So HandSome</li>
-    </a>
-    
-    <a href="../../cn/%E4%B8%8A%E5%96%84%E8%8B%A5%E6%B0%B4/">
-      <li>最高德行——上善若水</li>
-    </a>
-    
-    <a href="../../cn/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%BC%9A%E5%A5%BD%E5%90%97/">
-      <li>这个世界还会好吗</li>
-    </a>
-    
-    <a href="../../cn/index/">
-      <li>祝小曾生日快乐</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
         <!-- Friends Blog -->
-
-<h5><a href="/">链友</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://v-vincen.life/" target="_blank">V_Vincen</a></li>
-  
-  <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-  
-  <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
-</ul>
-
-
+        
         <hr>
-    
-        <!-- Archives -->
+        <h5>链友</h5>
+        <ul class="list-inline">
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/07/">July 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">June 2023</a><span class="archive-list-count">7</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#随记">
-      <li>随记</li>
-    </a>
-    
-    <a href="/categories/#学习笔记">
-      <li>学习笔记</li>
-    </a>
-    
-    <a href="/categories/#I love design">
-      <li>I love design</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -880,7 +931,7 @@
     let jsdelivr = "https://cdn.jsdelivr.net/gh/";
     let gh = "irwins226";
     let ghPages = gh + ".github.io";
-    let pagePath = "tags/Life-documentary/index.html";
+    let pagePath = "cn/installjdk/";
     let jsdelivrurl;
     if (pagePath.indexOf("index.html") != -1) {
       jsdelivrurl = jsdelivr + gh + "/" + ghPages;
