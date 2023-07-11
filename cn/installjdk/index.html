@@ -259,6 +259,17 @@
           
           
           <li>
+            <a href="/tags/">
+              
+              标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
             <a href="/about/">
               
               关于
@@ -273,17 +284,6 @@
             <a href="/categories/">
               
               分类
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/tags/">
-              
-              标签
               
               
             </a>
@@ -476,11 +476,19 @@
 <p>Cenos 操作系统安装jdk1.8</p>
 <h2 id="1-检查并卸载-OpenJDK">1 检查并卸载 OpenJDK</h2>
 <p>查看 Java 相关信息，检查系统是否自带了 OpenJDK 以及相关安装包，如果有的话则应先将其卸载</p>
-<p>java -version</p>
-<p>rpm -qa | grep java</p>
-<p>// rpm（RedHat Package Manger）：RedHat软件管理工具，是一种用于打包及安装的工具<br>
-// -qa（query，all）<br>
-// grep（global search rgular expression(RE) and print out the line）：是一种强大的文本搜索工具</p>
+<p><code>java -version</code></p>
+<p><code>rpm -qa | grep java</code></p>
+<ul>
+<li>
+<p>[ ] rpm（RedHat Package Manger）：RedHat软件管理工具，是一种用于打包及安装的工具</p>
+</li>
+<li>
+<p>[ ] -qa（query，all）</p>
+</li>
+<li>
+<p>[ ] grep（global search rgular expression(RE) and print out the line）：是一种强大的文本搜索工具</p>
+</li>
+</ul>
 <p>由于本人的服务器操作系统并没有安装Java环境，我都是直接使用docker进行管理的，所以执行如下</p>
 <blockquote>
 <p>[root@VM-0-13-centos jar]# java -version</p>
